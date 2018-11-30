@@ -1,0 +1,115 @@
+header {
+    position: relative;
+    background-color: black;
+    height: 75vh;
+    min-height: 100%;
+    width: 100%;
+    overflow: hidden;
+}
+
+header video {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    object-fit: fill;
+    z-index: 0;
+    -ms-transform: translateX(-50%) translateY(-50%);
+    -moz-transform: translateX(-50%) translateY(-50%);
+    -webkit-transform: translateX(-50%) translateY(-50%);
+    transform: translateX(-50%) translateY(-50%);
+}
+
+header .container {
+    position: relative;
+    z-index: 2;
+}
+
+header .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: black;
+    opacity: 0.5;
+    z-index: 1;
+}
+
+@media (pointer: coarse) and (hover: none) {
+    header {
+        background: url('../img/la_fraterna_website.mp4') black no-repeat center center scroll;
+    }
+}
+
+@font-face {
+    font-family: "Jolly";
+    src: url(fonts/Jolly_Bold.ttf) format("truetype");
+}
+.la-fraterna-nav-title { 
+    cursor: pointer;
+    font-family: "Jolly", Verdana, Tahoma;
+    color: inherit;
+    font-size: 2em;
+}
+.la-fraterna-nav-title:hover {
+    text-decoration: none;
+}
+.la-fraterna-logo-nav {
+    width: 100px;
+}
+
+.parallax {
+    /* The image used */
+    background-image: url("../img/portfolio/fullsize/risotto2.JPG");
+
+    /* Set a specific height */
+    height: 650px; 
+
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+@media only screen and (max-device-width: 1200px) {
+    .parallax {
+        background-attachment: scroll;
+        height: auto;
+    }
+}
+
+#mainNav {
+    color: rgba(255, 255, 255, 0.7);
+}
+
+.navbar-light .navbar-toggler {
+    border-color: rgba(255, 255, 255, 0.7);
+}
+
+#mainNav.navbar-shrink.navbar-light .navbar-toggler {
+    border-color: #7f7f7f;
+}
+
+.navbar-light .navbar-toggler-icon {
+    display: none;
+}
+
+#mainNav.navbar-shrink {
+    color: inherit;
+}
+
+.navbar-shrink .fas.fa-bars {
+    color: inherit;
+}
+
+.fas.fa-bars {
+    color: white;
+}
+
+/* col-lg (Large) */
+@media (min-width: 992px) {
+}
