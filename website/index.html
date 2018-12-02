@@ -227,19 +227,84 @@
       </div>
     </section>
   
-  <section id="contact">
+  <section id="contact" class="pb-5">
     <div class="container">
       <div class="row">
         <div class="col-lg-8 mx-auto text-center">
           <h2 class="section-heading">¡Contactanos!</h2>
-          <!-- <hr class="my-4"> -->
-          <!-- <p class="mb-5">¡Si queres venir a comer o preguntar cualquier cosa contactanos por teléfono o e-mail!</p> -->
-          <iframe width="100%" height="745" allowTransparency="true" frameborder="0" scrolling="yes" style="border:1px solid black; overflow: auto;" src="https://www.emailmeform.com/builder/embed/1z96k0Q2K67cZam0dPp67"><a href="https://www.emailmeform.com/builder/embed/1z96k0Q2K67cZam0dPp67">Fill out form.</a></iframe>
-<div style="margin-top:18px;text-align:center"><div id='emf_advertisement'><font face="Verdana" size="2" color="#000000">Powered by</font><span style="position: relative; padding-left: 3px; bottom: -5px;"><img src="//assets.emailmeform.com/images/footer-logo.png?RU1GLTAyLTQxLUhTVFM%3D" /></span><font face="Verdana" size="2" color="#000000">EMF </font><a style="text-decoration:none;" href="https://www.emailmeform.com/" target="_blank"><font face="Verdana" size="2" color="#000000">Online Payment Form</font></a></div></div>
+          <p class="description mb-5">Si queres contactarnos por cualquier consulta, por eventos, por sugerencias o por cualquier otra cosa, no dudes en mandarnos un mensaje.</p>
+
+          <form action="https://formspree.io/fcarocena@gmail.com" method="POST" class="text-left">
+          
+            <div class="row">
+              <div class="offset-2 col-8">
+                <div class="row justify-content-center mb-3">
+                  <input type="text" name="nombre" placeholder="Decinos tu nombre...">
+                </div>
+                <div class="row justify-content-center mb-3">
+                  <input type="email" name="email" placeholder="Email address...">
+                </div>
+                <div class="row justify-content-center mb-3">
+                  <input type="text" name="telefono" placeholder="Telefono de contacto...">
+                </div>
+                <div class="row justify-content-center mb-3">
+                  <textarea class="" type="textarea" name="mensaje" placeholder="Escribinos tu consulta/sugerencia..."></textarea>
+                </div>
+                <div class="row justify-content-center mb-3">
+                  <input id="btn-enviar" class="m-auto" type="submit" value="Enviar">
+                </div>
+              </div>
+            </div>
+
+            <input type="hidden" name="_next" value="http://webdevcoop.com/?form=confirmed" />
+            <input type="hidden" name="_subject" value="Consulta Web..." />
+            <input type="hidden" name="_language" value="es" />
+          </form>
         </div>
       </div>
-      <div class="row">
-        <div class="col-lg-3 ml-auto text-center">
+    </div>
+  </section>
+  <footer class="py-5">
+    <div class="container">
+      <div class="row align-items-center">
+        <div class="col">
+          <div class="container">
+            <div class="row pb-1 align-items-center">
+              <i class="mr-2 fas fa-map-marker-alt"></i> Av. Giannattasio Km 27.200, Canelones, Uruguay 15800
+            </div>
+            <div class="row pb-1 align-items-center">
+              <i class="mr-2 fas fa-phone"></i> 099 123 333
+            </div>
+            <div class="row align-items-center">
+              <i class="mr-2 fas fa-envelope"></i>
+              <a href="mailto:espaciolafraterna@gmail.comm">espaciolafraterna@gmail.com</a>
+            </div>
+          </div>
+          
+        </div>
+        <div class="col">
+          <div class="container">
+            <div class="row text-center">
+              <div class="col">
+                <a style="color: #212529;" href="https://www.facebook.com/EspacioLaFraterna/" target="_blank">
+                  <i class="fab fa-facebook fa-3x mb-3 sr-contact-2"></i>
+                </a>
+                <p>
+                  <a href="https://www.facebook.com/EspacioLaFraterna/" target="_blank">@LaFraterna</a>
+                </p>
+              </div>
+              <div class="col">
+                <a style="color: #212529;" href="https://www.instagram.com/lafraterna_/" target="_blank">
+                  <i class="fab fa-instagram fa-3x mb-3 sr-contact-2"></i>
+                </a>
+                <p>
+                  <a href="https://www.instagram.com/lafraterna_/" target="_blank">@lafraterna_</a>
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- <div class="col-lg-3 ml-auto text-center">
           <i class="fas fa-phone fa-3x mb-3 sr-contact-1"></i>
           <p>099 123 333</p>
         </div>
@@ -250,9 +315,9 @@
           </p>
         </div>
         <div class="col-lg-3 mr-auto text-center">
-            <a style="color: #4065b4;" href="https://www.facebook.com/EspacioLaFraterna/" target="_blank">
-              <i class="fab fa-facebook fa-3x mb-3 sr-contact-2"></i>
-            </a>
+          <a style="color: #4065b4;" href="https://www.facebook.com/EspacioLaFraterna/" target="_blank">
+            <i class="fab fa-facebook fa-3x mb-3 sr-contact-2"></i>
+          </a>
           <p>
             <a href="https://www.facebook.com/EspacioLaFraterna/" target="_blank">@LaFraterna</a>
           </p>
@@ -264,10 +329,10 @@
           <p>
             <a href="https://www.instagram.com/lafraterna_/" target="_blank">@lafraterna_</a>
           </p>
-        </div>
+        </div> -->
       </div>
     </div>
-  </section>
+  </footer>
 
   <!-- Bootstrap core JavaScript -->
   <script src="vendor/jquery/jquery.min.js"></script>
