@@ -234,24 +234,24 @@
           <h2 class="section-heading">¡Contactanos!</h2>
           <p class="description mb-5">Si queres contactarnos por cualquier consulta, por eventos, por sugerencias o por cualquier otra cosa, no dudes en mandarnos un mensaje.</p>
 
-          <form action="https://formspree.io/fcarocena@gmail.com" method="POST" class="text-left">
+          <form id="contact-form" action="https://formspree.io/fcarocena@gmail.com" method="POST" class="text-left" onsubmit="return validateForm();">
           
-            <div class="row">
-              <div class="offset-2 col-8">
+            <div class="row justify-content-center">
+              <div class="col-11 col-md-8">
                 <div class="row justify-content-center mb-3">
-                  <input type="text" name="nombre" placeholder="Decinos tu nombre...">
+                  <input id="inpt-name" class="w-75" type="text" name="nombre" placeholder="Decinos tu nombre..." minlength="2" required>
                 </div>
                 <div class="row justify-content-center mb-3">
-                  <input type="email" name="email" placeholder="Email address...">
+                  <input id="inpt-email" class="w-75" type="email" name="email" placeholder="Email address..." required>
                 </div>
                 <div class="row justify-content-center mb-3">
-                  <input type="text" name="telefono" placeholder="Telefono de contacto...">
+                  <input id="inpt-tel" class="w-75" type="text" name="telefono" placeholder="Telefono de contacto...">
                 </div>
                 <div class="row justify-content-center mb-3">
-                  <textarea class="" type="textarea" name="mensaje" placeholder="Escribinos tu consulta/sugerencia..."></textarea>
+                  <textarea id="txtarea-mensaje" class="w-75 shadow p-3" type="textarea" name="mensaje" placeholder="Escribinos tu consulta o sugerencia..." required></textarea>
                 </div>
                 <div class="row justify-content-center mb-3">
-                  <input id="btn-enviar" class="m-auto" type="submit" value="Enviar">
+                  <button id="btn-enviar" class="m-auto btn btn-primary" type="submit">Enviar</button>
                 </div>
               </div>
             </div>
@@ -269,7 +269,7 @@
       <div class="row align-items-center">
         <div class="col">
           <div class="container">
-            <div class="row pb-1 align-items-center">
+            <div class="row pb-1 align-items-center d-inline-block">
               <i class="mr-2 fas fa-map-marker-alt"></i> Av. Giannattasio Km 27.200, Canelones, Uruguay 15800
             </div>
             <div class="row pb-1 align-items-center">
@@ -304,50 +304,30 @@
             </div>
           </div>
         </div>
-        <!-- <div class="col-lg-3 ml-auto text-center">
-          <i class="fas fa-phone fa-3x mb-3 sr-contact-1"></i>
-          <p>099 123 333</p>
-        </div>
-        <div class="col-lg-3 mr-auto text-center">
-          <i class="fas fa-envelope fa-3x mb-3 sr-contact-2"></i>
-          <p>
-            <a href="mailto:espaciolafraterna@gmail.comm">espaciolafraterna@gmail.com</a>
-          </p>
-        </div>
-        <div class="col-lg-3 mr-auto text-center">
-          <a style="color: #4065b4;" href="https://www.facebook.com/EspacioLaFraterna/" target="_blank">
-            <i class="fab fa-facebook fa-3x mb-3 sr-contact-2"></i>
-          </a>
-          <p>
-            <a href="https://www.facebook.com/EspacioLaFraterna/" target="_blank">@LaFraterna</a>
-          </p>
-        </div>
-        <div class="col-lg-3 mr-auto text-center">
-            <a style="color: #262626;" href="https://www.instagram.com/lafraterna_/" target="_blank">
-              <i class="fab fa-instagram fa-3x mb-3 sr-contact-2"></i>
-            </a>
-          <p>
-            <a href="https://www.instagram.com/lafraterna_/" target="_blank">@lafraterna_</a>
-          </p>
-        </div> -->
       </div>
     </div>
   </footer>
 
-  <!-- Bootstrap core JavaScript -->
-  <script src="vendor/jquery/jquery.min.js"></script>
-  <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-
-  <!-- Plugin JavaScript -->
-  <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
-  <script src="vendor/scrollreveal/scrollreveal.min.js"></script>
-  <script src="vendor/magnific-popup/jquery.magnific-popup.min.js"></script>
-
-  <!-- Custom scripts for this template -->
-  <script src="js/creative.min.js"></script>
-
-  <script async src="http://static.zotabox.com/6/a/6aca6d4c7d2c70284efc08ceb401c5a1/widgets.js"></script>
-
 </body>
+
+<!-- Bootstrap core JavaScript -->
+<script src="vendor/jquery/jquery.min.js"></script>
+<script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+<!-- Plugin JavaScript -->
+<script src="vendor/jquery-easing/jquery.easing.min.js"></script>
+<script src="vendor/scrollreveal/scrollreveal.min.js"></script>
+<script src="vendor/magnific-popup/jquery.magnific-popup.min.js"></script>
+
+<!-- Custom scripts for this template -->
+<script src="./js/creative.min.js"></script>
+
+<script src="./js/jquery.validate.min.js"></script>
+
+<script src="./js/custom_validation_messages.js"></script>
+
+<script>
+  $('#contact-form').validate();
+</script>
 
 </html>

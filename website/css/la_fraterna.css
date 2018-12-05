@@ -135,26 +135,30 @@ footer {
     }
 }
 
-form input {
+form input,
+form textarea {
     border: none;
     background-color: transparent;
-    border-bottom: 1px solid #a5402d;
-    width: 50%;
+    border-bottom: 2px solid #a5402d;
     color: #a5402d;
+    padding-bottom: 5px;
 }
 form textarea {
-    width: 50%;
-    border: 1px solid transparent;
-    background-color: transparent;
-    color: #a5402d;
+    border: 1px solid #a5402d;
+    border-radius: 5px;
+    min-height: 10em;
 }
+
 form input:focus,
 form textarea:focus {
     outline: none;
     -webkit-box-shadow: none;
     -moz-box-shadow: none;
     box-shadow: none;
-    border-bottom: 1px solid transparent;
+}
+
+form input:focus {
+    border-bottom: 2px solid transparent;
 }
 
 form input:focus::-webkit-input-placeholder,
@@ -163,10 +167,12 @@ form textarea:focus::-webkit-input-placeholder{ /* WebKit browsers */
 }
 #btn-enviar {
     width: 5em;
-    /* border: 1px solid #561d25; */
     background-color: #a5402d;
     box-shadow: 2px 2px 2px #a5402d;
     color: #f3c98b;
     border-radius: 4px;
     cursor: pointer;
+}
+.error {
+    color: #212529;
 }
