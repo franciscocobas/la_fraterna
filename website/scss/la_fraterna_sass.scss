@@ -7,7 +7,8 @@ $color4: rgba(255, 255, 252, 1);
 $color4-transparent: rgba(255, 255, 252, 0.7);
 $color5: rgba(62, 92, 118, 1);
 
-/* Media queries sizes */ 
+
+/* Media queries sizes */
 $break-small: 576px;
 $break-medium: 720px;
 $break-large: 992px;
@@ -33,11 +34,20 @@ a,
   z-index: 1;
 }
 
+.overlayResto{
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  background-color: $color1-transparent;
+  color: $color4-transparent;
+  margin-top: -8em;
+}
+
 #header-fraterna {
   .overlay {
     top: 0;
     left: 0;
-  } 
+  }
 }
 
 #contact.parallax {
@@ -83,25 +93,25 @@ a,
     background-color: $color4-transparent;
     border-radius: 5px;
   }
-  
+
   input:focus {
     border-bottom: 2px solid transparent;
   }
-  
+
   input:focus::-webkit-input-placeholder,
   textarea:focus::-webkit-input-placeholder{ /* WebKit browsers */
     color: transparent;
   }
-  
+
   ::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
     color: $color1;
     opacity: 1; /* Firefox */
   }
-  
+
   :-ms-input-placeholder { /* Internet Explorer 10-11 */
     color: $color1;
   }
-  
+
   ::-ms-input-placeholder { /* Microsoft Edge */
     color: $color1;
   }
@@ -112,7 +122,7 @@ a,
 }
 
 .parallax {
-  min-height: 650px; 
+  min-height: 650px;
   background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;

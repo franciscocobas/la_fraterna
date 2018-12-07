@@ -26,6 +26,15 @@ a,
   z-index: 1;
 }
 
+.overlayResto {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  background-color: rgba(51, 24, 50, 0.5);
+  color: rgba(255, 255, 252, 0.7);
+  margin-top: -8em;
+}
+
 #header-fraterna .overlay {
   top: 0;
   left: 0;
