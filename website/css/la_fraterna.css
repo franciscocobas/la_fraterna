@@ -44,17 +44,17 @@ header .overlay {
 
 @media (pointer: coarse) and (hover: none) {
     header {
-        background: url('../img/la_fraterna_website.mp4') black no-repeat center center scroll;
+        background: url('../img/la_fraterna_website_compressed.mp4') black no-repeat center center scroll;
     }
 }
 
 @font-face {
-    font-family: "Jolly";
-    src: url(fonts/Jolly_Bold.ttf) format("truetype");
+    font-family: "Moon Flower Bold";
+    src: url(fonts/Moon_Flower_Bold.ttf) format("truetype");
 }
 .la-fraterna-nav-title { 
     cursor: pointer;
-    font-family: "Jolly", Verdana, Tahoma;
+    font-family: "Moon Flower Bold", Verdana, Tahoma;
     color: inherit;
     font-size: 2em;
 }
