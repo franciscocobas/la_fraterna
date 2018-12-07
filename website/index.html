@@ -29,14 +29,15 @@
   <!-- Fonts de la Fraterna -->
   <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
 
   <!-- Plugin CSS -->
   <link href="vendor/magnific-popup/magnific-popup.css" rel="stylesheet">
 
   <!-- Custom styles for this template -->
-  <link href="css/creative.css" rel="stylesheet">
-  <link href="css/la_fraterna.css" rel="stylesheet">
-  <link rel="stylesheet" href="css/la_fraterna_sass.css">
+  <link href="css/creative.min.css" rel="stylesheet">
+  <link href="css/la_fraterna.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="css/la_fraterna_sass.min.css">
 
 </head>
 
@@ -71,6 +72,13 @@
 
   </nav>
 
+  <div id="div-consulta" class="alert alert-success d-none" role="alert">
+      Consulta recibida con éxito.
+      <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+        <span aria-hidden="true">&times;</span>
+      </button>
+    </div>
+  
   <header id="header-fraterna">
     <div class="overlay"></div>
     <video playsinline="playsinline" autoplay="autoplay" muted="muted" loop="loop">
@@ -227,11 +235,12 @@
         </div>
       </div>
     </section>
-  
-  <section id="contact" class="pb-5">
+
+  <section id="contact" class="pb-5 parallax position-relative">
+    <div class="overlay"></div>
     <div class="container">
       <div class="row">
-        <div class="col-lg-8 mx-auto text-center">
+        <div class="form-container col-lg-8 text-center rounded py-3 px-5 mx-2 mx-lg-auto ">
           <h2 class="section-heading">¡Contactanos!</h2>
           <p class="description mb-5">Si queres contactarnos por cualquier consulta, por eventos, por sugerencias o por cualquier otra cosa, no dudes en mandarnos un mensaje.</p>
 
@@ -243,10 +252,10 @@
                   <input id="inpt-name" class="w-75" type="text" name="nombre" placeholder="Decinos tu nombre..." minlength="2" required>
                 </div>
                 <div class="row justify-content-center mb-3">
-                  <input id="inpt-email" class="w-75" type="email" name="email" placeholder="Email address..." required>
+                  <input id="inpt-email" class="w-75" type="email" name="email" placeholder="Dirección de mail..." required>
                 </div>
                 <div class="row justify-content-center mb-3">
-                  <input id="inpt-tel" class="w-75" type="text" name="telefono" placeholder="Telefono de contacto...">
+                  <input id="inpt-tel" class="w-75" type="text" name="telefono" placeholder="Teléfono de contacto...">
                 </div>
                 <div class="row justify-content-center mb-3">
                   <textarea id="txtarea-mensaje" class="w-75 shadow p-3" type="textarea" name="mensaje" placeholder="Escribinos tu consulta o sugerencia..." required></textarea>
@@ -257,7 +266,7 @@
               </div>
             </div>
 
-            <input type="hidden" name="_next" value="http://webdevcoop.com/?form=confirmed" />
+            <input type="hidden" name="_next" value="http://localhost:3002/?form=confirmed" />
             <input type="hidden" name="_subject" value="Consulta Web..." />
             <input type="hidden" name="_language" value="es" />
           </form>
@@ -287,7 +296,7 @@
           <div class="container">
             <div class="row text-center">
               <div class="col">
-                <a style="color: #212529;" href="https://www.facebook.com/EspacioLaFraterna/" target="_blank">
+                <a class="social-logos" href="https://www.facebook.com/EspacioLaFraterna/" target="_blank">
                   <i class="fab fa-facebook fa-3x mb-3 sr-contact-2"></i>
                 </a>
                 <p>
@@ -295,7 +304,7 @@
                 </p>
               </div>
               <div class="col">
-                <a style="color: #212529;" href="https://www.instagram.com/lafraterna_/" target="_blank">
+                <a class="social-logos" href="https://www.instagram.com/lafraterna_/" target="_blank">
                   <i class="fab fa-instagram fa-3x mb-3 sr-contact-2"></i>
                 </a>
                 <p>
@@ -326,6 +335,8 @@
 <script src="./js/jquery.validate.min.js"></script>
 
 <script src="./js/custom_validation_messages.js"></script>
+
+<script src="./js/la_fraterna.js"></script>
 
 <script>
   $('#contact-form').validate();

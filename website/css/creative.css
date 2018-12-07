@@ -40,13 +40,7 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: 'Montserrat', sans-serif;
-  font-weight: 700;
-}
-
-p {
-  font-family: 'Lato', sans-serif;
-  font-size: 1.1em;
+  font-family: 'Open Sans', 'Helvetica Neue', Arial, sans-serif;
 }
 
 .bg-primary {
@@ -62,7 +56,7 @@ p {
 }
 
 section {
-  padding: 6rem 0 8rem 0;
+  padding: 8rem 0;
 }
 
 .section-heading {
@@ -139,19 +133,11 @@ img::-moz-selection {
   background-color: transparent;
 }
 
-/* Custom css */
-#mainNav {
-  border-color: transparent;
-  background-color: transparent;
-}
-#mainNav.navbar-shrink {
-  border-bottom: 1px solid rgba(33, 37, 41, 0.1);
-  background-color: #fff;
-}
-
-/* col-lg (Large) */
-
 @media (min-width: 992px) {
+  #mainNav {
+    border-color: transparent;
+    background-color: transparent;
+  }
   #mainNav .navbar-brand {
     color: rgba(255, 255, 255, 0.7);
   }
@@ -169,6 +155,10 @@ img::-moz-selection {
   #mainNav .navbar-nav > li.nav-item > a.nav-link:focus:hover {
     color: #fff;
   }
+  #mainNav.navbar-shrink {
+    border-bottom: 1px solid rgba(33, 37, 41, 0.1);
+    background-color: #fff;
+  }
   #mainNav.navbar-shrink .navbar-brand {
     color: #F05F40;
   }
@@ -182,6 +172,51 @@ img::-moz-selection {
   #mainNav.navbar-shrink .navbar-nav > li.nav-item > a.nav-link:hover,
   #mainNav.navbar-shrink .navbar-nav > li.nav-item > a.nav-link:focus:hover {
     color: #F05F40;
+  }
+}
+
+header.masthead {
+  padding-top: 10rem;
+  padding-bottom: calc(10rem - 56px);
+  background-image: url("../img/header.jpg");
+  background-position: center center;
+  background-size: cover;
+}
+
+header.masthead hr {
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+
+header.masthead h1 {
+  font-size: 2rem;
+}
+
+header.masthead p {
+  font-weight: 300;
+}
+
+@media (min-width: 768px) {
+  header.masthead p {
+    font-size: 1.15rem;
+  }
+}
+
+@media (min-width: 992px) {
+  header.masthead {
+    height: 100vh;
+    min-height: 650px;
+    padding-top: 0;
+    padding-bottom: 0;
+  }
+  header.masthead h1 {
+    font-size: 3rem;
+  }
+}
+
+@media (min-width: 1200px) {
+  header.masthead h1 {
+    font-size: 4rem;
   }
 }
 

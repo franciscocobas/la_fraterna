@@ -1,11 +1,166 @@
+/*!
+ * Start Bootstrap - Creative v5.0.1 (https://startbootstrap.com/template-overviews/creative)
+ * Copyright 2013-2018 Start Bootstrap
+ * Licensed under MIT (https://github.com/BlackrockDigital/startbootstrap-creative/blob/master/LICENSE)
+ */
+
 /* RGB */
-#contact {
-  background-color: #fffffc;
-  color: #3e5c76;
+/* Media queries sizes */
+body,
+h2,
+a,
+.btn {
+  font-family: 'Raleway', sans-serif;
 }
 
 .logo-principal {
   opacity: 0.5;
 }
 
-/*# sourceMappingURL=la_fraterna_sass.css.map */
+.overlay {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  background-color: black;
+  opacity: 0.5;
+  z-index: 1;
+}
+
+#header-fraterna .overlay {
+  top: 0;
+  left: 0;
+}
+
+#contact.parallax {
+  background-image: url("../img/flor_burucuya.jpg");
+}
+
+#contact {
+  color: #331832;
+}
+
+#contact h2 {
+  font-weight: 700;
+}
+
+#contact .overlay {
+  margin-top: -8em;
+  z-index: 0;
+}
+
+#contact .form-container {
+  background-color: rgba(255, 255, 252, 0.7);
+}
+
+#contact input,
+#contact textarea {
+  border: none;
+  background-color: transparent;
+  border-bottom: 2px solid #331832;
+  padding-bottom: 5px;
+}
+
+#contact textarea {
+  border: 1px solid #331832;
+  border-radius: 5px;
+  min-height: 10em;
+}
+
+#contact label {
+  width: 75%;
+  color: #f05f40;
+}
+
+#contact input:focus,
+#contact textarea:focus {
+  outline: none;
+  -webkit-box-shadow: none;
+  box-shadow: none;
+  background-color: rgba(255, 255, 252, 0.7);
+  border-radius: 5px;
+}
+
+#contact input:focus {
+  border-bottom: 2px solid transparent;
+}
+
+#contact input:focus::-webkit-input-placeholder,
+#contact textarea:focus::-webkit-input-placeholder {
+  /* WebKit browsers */
+  color: transparent;
+}
+
+#contact ::-webkit-input-placeholder {
+  /* Chrome, Firefox, Opera, Safari 10.1+ */
+  color: #331832;
+  opacity: 1;
+  /* Firefox */
+}
+
+#contact :-ms-input-placeholder {
+  /* Chrome, Firefox, Opera, Safari 10.1+ */
+  color: #331832;
+  opacity: 1;
+  /* Firefox */
+}
+
+#contact ::-ms-input-placeholder {
+  /* Chrome, Firefox, Opera, Safari 10.1+ */
+  color: #331832;
+  opacity: 1;
+  /* Firefox */
+}
+
+#contact ::placeholder {
+  /* Chrome, Firefox, Opera, Safari 10.1+ */
+  color: #331832;
+  opacity: 1;
+  /* Firefox */
+}
+
+#contact :-ms-input-placeholder {
+  /* Internet Explorer 10-11 */
+  color: #331832;
+}
+
+#contact ::-ms-input-placeholder {
+  /* Microsoft Edge */
+  color: #331832;
+}
+
+#restaurante.parallax {
+  background-image: url("../img/portfolio/fullsize/risotto2.JPG");
+}
+
+.parallax {
+  min-height: 650px;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+@media only screen and (max-device-width: 1200px) {
+  .parallax {
+    background-attachment: scroll;
+    height: auto;
+  }
+}
+
+#div-consulta {
+  top: 1em;
+  width: 35%;
+  z-index: 1031;
+  position: absolute;
+  margin: 0 35%;
+}
+
+.error {
+  color: #331832;
+}
+
+footer {
+  font-family: 'Raleway', sans-serif;
+  background-color: #3e5c76;
+  color: #f05f40;
+}

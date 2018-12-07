@@ -1,6 +1,9 @@
 body {
-    font-family: 'Lato', sans-serif;
+
+    margin: 0;
+    padding: 0;
 }
+
 header {
     position: relative;
     background-color: black;
@@ -31,17 +34,6 @@ header .container {
     z-index: 2;
 }
 
-header .overlay {
-    position: absolute;
-    top: 0;
-    left: 0;
-    height: 100%;
-    width: 100%;
-    background-color: black;
-    opacity: 0.5;
-    z-index: 1;
-}
-
 @media (pointer: coarse) and (hover: none) {
     header {
         background: url('../img/la_fraterna_website_compressed.mp4') black no-repeat center center scroll;
@@ -63,25 +55,6 @@ header .overlay {
 }
 .la-fraterna-logo-nav {
     width: 100px;
-}
-
-#restaurante.parallax {
-    background-image: url("../img/portfolio/fullsize/risotto2.JPG");
-}
-
-.parallax {
-    height: 650px; 
-    background-attachment: fixed;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-}
-
-@media only screen and (max-device-width: 1200px) {
-    .parallax {
-        background-attachment: scroll;
-        height: auto;
-    }
 }
 
 #mainNav {
@@ -116,55 +89,6 @@ header .overlay {
 @media (min-width: 992px) {
 }
 
-footer {
-    font-family: "Jolly", Verdana, Tahoma;
-    background-color: #561d25;
-    color: #f3c98b;
-    /* background-color: #f3c98b; */
-}
-
-#contact {
-    color: #a5402d;
-    background-color: #f3c98b;
-}
-
-@media only screen and (max-device-width: 1200px) {
-    .parallax {
-        background-attachment: scroll;
-        height: auto;
-    }
-}
-
-form input,
-form textarea {
-    border: none;
-    background-color: transparent;
-    border-bottom: 2px solid #a5402d;
-    color: #a5402d;
-    padding-bottom: 5px;
-}
-form textarea {
-    border: 1px solid #a5402d;
-    border-radius: 5px;
-    min-height: 10em;
-}
-
-form input:focus,
-form textarea:focus {
-    outline: none;
-    -webkit-box-shadow: none;
-    -moz-box-shadow: none;
-    box-shadow: none;
-}
-
-form input:focus {
-    border-bottom: 2px solid transparent;
-}
-
-form input:focus::-webkit-input-placeholder,
-form textarea:focus::-webkit-input-placeholder{ /* WebKit browsers */
-    color: transparent;
-}
 #btn-enviar {
     width: 5em;
     background-color: #a5402d;
@@ -172,7 +96,4 @@ form textarea:focus::-webkit-input-placeholder{ /* WebKit browsers */
     color: #f3c98b;
     border-radius: 4px;
     cursor: pointer;
-}
-.error {
-    color: #212529;
 }
