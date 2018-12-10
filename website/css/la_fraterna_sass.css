@@ -75,6 +75,10 @@ a,
   min-height: 10em;
 }
 
+#contact .colorIcon {
+  color: #cbe896 !important;
+}
+
 #contact label {
   width: 75%;
   color: #f05f40;
@@ -147,6 +151,7 @@ a,
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+  color: #fffffc;
 }
 
 @media only screen and (max-device-width: 1200px) {
