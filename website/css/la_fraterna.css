@@ -1,8 +1,4 @@
-body {
 
-    margin: 0;
-    padding: 0;
-}
 
 header {
     position: relative;
@@ -40,49 +36,8 @@ header .container {
     }
 }
 
-@font-face {
-    font-family: "Moon Flower Bold";
-    src: url(fonts/Moon_Flower_Bold.ttf) format("truetype");
-}
-.la-fraterna-nav-title { 
-    cursor: pointer;
-    font-family: "Moon Flower Bold", Verdana, Tahoma;
-    color: inherit;
-    font-size: 2em;
-}
-.la-fraterna-nav-title:hover {
-    text-decoration: none;
-}
 .la-fraterna-logo-nav {
     width: 100px;
-}
-
-#mainNav {
-    color: rgba(255, 255, 255, 0.7);
-}
-
-.navbar-light .navbar-toggler {
-    border-color: rgba(255, 255, 255, 0.7);
-}
-
-#mainNav.navbar-shrink.navbar-light .navbar-toggler {
-    border-color: #7f7f7f;
-}
-
-.navbar-light .navbar-toggler-icon {
-    display: none;
-}
-
-#mainNav.navbar-shrink {
-    color: inherit;
-}
-
-.navbar-shrink .fas.fa-bars {
-    color: inherit;
-}
-
-.fas.fa-bars {
-    color: white;
 }
 
 /* col-lg (Large) */

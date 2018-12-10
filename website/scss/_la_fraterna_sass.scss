@@ -1,11 +1,4 @@
-/* RGB */
-$color1: rgba(51, 24, 50, 1);
-$color1-transparent: rgba(51, 24, 50, 0.5);
-$color2: rgba(240, 95, 64, 1);
-$color3: rgba(203, 232, 150, 1);
-$color4: rgba(255, 255, 252, 1);
-$color4-transparent: rgba(255, 255, 252, 0.7);
-$color5: rgba(62, 92, 118, 1);
+
 
 /* Media queries sizes */ 
 $break-small: 576px;
@@ -18,6 +11,27 @@ h2,
 a,
 .btn {
     font-family: 'Raleway', sans-serif;
+}
+
+@font-face {
+  font-family: "Moon Flower Bold";
+  src: url(fonts/Moon_Flower_Bold.ttf) format("truetype");
+}
+
+nav#mainNav {
+  // #mainNav .navbar-nav>li.nav-item>a.nav-link
+  a{
+    font-family: "Moon Flower Bold", Verdana, Tahoma;
+  }
+
+  .la-fraterna-nav-title { 
+    cursor: pointer;
+    font-size: 2em;
+    font-weight: 600; 
+  }
+  .la-fraterna-nav-title:hover {
+    text-decoration: none;
+  }  
 }
 
 .logo-principal {
@@ -44,6 +58,7 @@ a,
   background-image: url("../img/flor_burucuya.jpg");
 }
 
+
 #contact {
 
   color: $color1;
@@ -58,6 +73,7 @@ a,
   .form-container {
     background-color: $color4-transparent;
   }
+
   input,
   textarea {
     border: none;
@@ -94,7 +110,7 @@ a,
   }
   
   ::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
-    color: $color1;
+    color: $color1-transparent;
     opacity: 1; /* Firefox */
   }
   

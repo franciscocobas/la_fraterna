@@ -13,6 +13,27 @@ a,
   font-family: 'Raleway', sans-serif;
 }
 
+@font-face {
+  font-family: "Moon Flower Bold";
+  src: url(fonts/Moon_Flower_Bold.ttf) format("truetype");
+}
+
+nav#mainNav a {
+  font-family: "Moon Flower Bold", Verdana, Tahoma;
+  color: #3e5c76;
+}
+
+nav#mainNav .la-fraterna-nav-title {
+  cursor: pointer;
+  color: #3e5c76;
+  font-size: 2em;
+  font-weight: 600;
+}
+
+nav#mainNav .la-fraterna-nav-title:hover {
+  text-decoration: none;
+}
+
 .logo-principal {
   opacity: 0.5;
 }
@@ -92,28 +113,28 @@ a,
 
 #contact ::-webkit-input-placeholder {
   /* Chrome, Firefox, Opera, Safari 10.1+ */
-  color: #331832;
+  color: rgba(51, 24, 50, 0.5);
   opacity: 1;
   /* Firefox */
 }
 
 #contact :-ms-input-placeholder {
   /* Chrome, Firefox, Opera, Safari 10.1+ */
-  color: #331832;
+  color: rgba(51, 24, 50, 0.5);
   opacity: 1;
   /* Firefox */
 }
 
 #contact ::-ms-input-placeholder {
   /* Chrome, Firefox, Opera, Safari 10.1+ */
-  color: #331832;
+  color: rgba(51, 24, 50, 0.5);
   opacity: 1;
   /* Firefox */
 }
 
 #contact ::placeholder {
   /* Chrome, Firefox, Opera, Safari 10.1+ */
-  color: #331832;
+  color: rgba(51, 24, 50, 0.5);
   opacity: 1;
   /* Firefox */
 }

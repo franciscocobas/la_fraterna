@@ -111,10 +111,10 @@ img::-moz-selection {
 
 #mainNav .navbar-nav > li.nav-item > a.nav-link,
 #mainNav .navbar-nav > li.nav-item > a.nav-link:focus {
-  font-size: .9rem;
+  font-size: 2rem;
   font-weight: 700;
   text-transform: uppercase;
-  color: #212529;
+  color: #3e5c76;
 }
 
 #mainNav .navbar-nav > li.nav-item > a.nav-link:hover,
@@ -133,10 +133,17 @@ img::-moz-selection {
   background-color: transparent;
 }
 
+#mainNav a {
+  color: #3e5c76;
+}
+
 @media (min-width: 992px) {
   #mainNav {
     border-color: transparent;
     background-color: transparent;
+  }
+  #mainNav a {
+    color: rgba(255, 255, 255, 0.7);
   }
   #mainNav .navbar-brand {
     color: rgba(255, 255, 255, 0.7);
@@ -159,18 +166,21 @@ img::-moz-selection {
     border-bottom: 1px solid rgba(33, 37, 41, 0.1);
     background-color: #fff;
   }
+  #mainNav.navbar-shrink a {
+    color: #212529;
+  }
   #mainNav.navbar-shrink .navbar-brand {
     color: #F05F40;
   }
   #mainNav.navbar-shrink .navbar-brand:focus, #mainNav.navbar-shrink .navbar-brand:hover {
     color: #f05f40;
   }
-  #mainNav.navbar-shrink .navbar-nav > li.nav-item > a.nav-link,
-  #mainNav.navbar-shrink .navbar-nav > li.nav-item > a.nav-link:focus {
+  #mainNav.navbar-shrink .navbar-nav > li.nav-item > a,
+  #mainNav.navbar-shrink .navbar-nav > li.nav-item > a:focus {
     color: #212529;
   }
-  #mainNav.navbar-shrink .navbar-nav > li.nav-item > a.nav-link:hover,
-  #mainNav.navbar-shrink .navbar-nav > li.nav-item > a.nav-link:focus:hover {
+  #mainNav.navbar-shrink .navbar-nav > li.nav-item > a:hover,
+  #mainNav.navbar-shrink .navbar-nav > li.nav-item > a:focus:hover {
     color: #F05F40;
   }
 }
@@ -316,4 +326,183 @@ header.masthead p {
 .btn-primary:active, .btn-primary:focus {
   -webkit-box-shadow: 0 0 0 0.2rem rgba(240, 95, 64, 0.5) !important;
   box-shadow: 0 0 0 0.2rem rgba(240, 95, 64, 0.5) !important;
+}
+
+/* Media queries sizes */
+body,
+h2,
+a,
+.btn {
+  font-family: 'Raleway', sans-serif;
+}
+
+@font-face {
+  font-family: "Moon Flower Bold";
+  src: url(fonts/Moon_Flower_Bold.ttf) format("truetype");
+}
+
+nav#mainNav a {
+  font-family: "Moon Flower Bold", Verdana, Tahoma;
+}
+
+nav#mainNav .la-fraterna-nav-title {
+  cursor: pointer;
+  font-size: 2em;
+  font-weight: 600;
+}
+
+nav#mainNav .la-fraterna-nav-title:hover {
+  text-decoration: none;
+}
+
+.logo-principal {
+  opacity: 0.5;
+}
+
+.overlay {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  background-color: black;
+  opacity: 0.5;
+  z-index: 1;
+}
+
+#header-fraterna .overlay {
+  top: 0;
+  left: 0;
+}
+
+#contact.parallax {
+  background-image: url("../img/flor_burucuya.jpg");
+}
+
+#contact {
+  color: #331832;
+}
+
+#contact h2 {
+  font-weight: 700;
+}
+
+#contact .overlay {
+  margin-top: -8em;
+  z-index: 0;
+}
+
+#contact .form-container {
+  background-color: rgba(255, 255, 252, 0.7);
+}
+
+#contact input,
+#contact textarea {
+  border: none;
+  background-color: transparent;
+  border-bottom: 2px solid #331832;
+  padding-bottom: 5px;
+}
+
+#contact textarea {
+  border: 1px solid #331832;
+  border-radius: 5px;
+  min-height: 10em;
+}
+
+#contact label {
+  width: 75%;
+  color: #f05f40;
+}
+
+#contact input:focus,
+#contact textarea:focus {
+  outline: none;
+  -webkit-box-shadow: none;
+  box-shadow: none;
+  background-color: rgba(255, 255, 252, 0.7);
+  border-radius: 5px;
+}
+
+#contact input:focus {
+  border-bottom: 2px solid transparent;
+}
+
+#contact input:focus::-webkit-input-placeholder,
+#contact textarea:focus::-webkit-input-placeholder {
+  /* WebKit browsers */
+  color: transparent;
+}
+
+#contact ::-webkit-input-placeholder {
+  /* Chrome, Firefox, Opera, Safari 10.1+ */
+  color: rgba(51, 24, 50, 0.5);
+  opacity: 1;
+  /* Firefox */
+}
+
+#contact :-ms-input-placeholder {
+  /* Chrome, Firefox, Opera, Safari 10.1+ */
+  color: rgba(51, 24, 50, 0.5);
+  opacity: 1;
+  /* Firefox */
+}
+
+#contact ::-ms-input-placeholder {
+  /* Chrome, Firefox, Opera, Safari 10.1+ */
+  color: rgba(51, 24, 50, 0.5);
+  opacity: 1;
+  /* Firefox */
+}
+
+#contact ::placeholder {
+  /* Chrome, Firefox, Opera, Safari 10.1+ */
+  color: rgba(51, 24, 50, 0.5);
+  opacity: 1;
+  /* Firefox */
+}
+
+#contact :-ms-input-placeholder {
+  /* Internet Explorer 10-11 */
+  color: #331832;
+}
+
+#contact ::-ms-input-placeholder {
+  /* Microsoft Edge */
+  color: #331832;
+}
+
+#restaurante.parallax {
+  background-image: url("../img/portfolio/fullsize/risotto2.JPG");
+}
+
+.parallax {
+  min-height: 650px;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+@media only screen and (max-device-width: 1200px) {
+  .parallax {
+    background-attachment: scroll;
+    height: auto;
+  }
+}
+
+#div-consulta {
+  top: 1em;
+  width: 35%;
+  z-index: 1031;
+  position: absolute;
+  margin: 0 35%;
+}
+
+.error {
+  color: #331832;
+}
+
+footer {
+  font-family: 'Raleway', sans-serif;
+  background-color: #3e5c76;
+  color: #f05f40;
 }
