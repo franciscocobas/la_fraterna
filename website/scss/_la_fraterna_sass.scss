@@ -41,6 +41,7 @@ nav#mainNav {
     cursor: pointer;
     font-size: 2em;
     font-weight: 600; 
+    margin: 0 auto;
   }
   .la-fraterna-nav-title:hover {
     text-decoration: none;
@@ -65,8 +66,6 @@ nav#mainNav {
   }
 
 }
-
-
 .overlay {
   position: absolute;
   height: 100%;
@@ -76,8 +75,30 @@ nav#mainNav {
   z-index: 1;
 }
 
-#restaurante.parallax {
-  background-image: url("../img/portfolio/fullsize/risotto2.JPG");
+#gastronomia{
+
+  color: $color4;
+
+  &.parallax {
+    background-image: url("../img/portfolio/fullsize/risotto2.JPG");
+  }
+
+  .overlay-resto {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(51, 24, 50, 0.5);
+    color: rgba(255, 255, 252, 0.7);
+    margin-top: -8em;
+  }
+  h2 {
+    color: $color3;
+  }
+  .icon-gastronomia-container {
+    i {
+      color: $color3;
+    }
+  }
 }
 
 .parallax {

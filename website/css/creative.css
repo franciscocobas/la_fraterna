@@ -112,7 +112,7 @@ img::-moz-selection {
 
 #mainNav .navbar-nav > li.nav-item > a.nav-link,
 #mainNav .navbar-nav > li.nav-item > a.nav-link:focus {
-  font-size: 2rem;
+  font-size: 1.8rem;
   font-weight: 700;
   text-transform: uppercase;
   color: #3e5c76;
@@ -375,6 +375,7 @@ nav#mainNav .la-fraterna-nav-title {
   cursor: pointer;
   font-size: 2em;
   font-weight: 600;
+  margin: 0 auto;
 }
 
 nav#mainNav .la-fraterna-nav-title:hover {
@@ -409,8 +410,29 @@ nav#mainNav .la-fraterna-nav-title:hover {
   z-index: 1;
 }
 
-#restaurante.parallax {
+#gastronomia {
+  color: #fffffc;
+}
+
+#gastronomia.parallax {
   background-image: url("../img/portfolio/fullsize/risotto2.JPG");
+}
+
+#gastronomia .overlay-resto {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  background-color: rgba(51, 24, 50, 0.5);
+  color: rgba(255, 255, 252, 0.7);
+  margin-top: -8em;
+}
+
+#gastronomia h2 {
+  color: #cbe896;
+}
+
+#gastronomia .icon-gastronomia-container i {
+  color: #cbe896;
 }
 
 .parallax {
