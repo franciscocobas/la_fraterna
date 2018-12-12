@@ -7,6 +7,7 @@ var uglify = require('gulp-uglify');
 var autoprefixer = require('gulp-autoprefixer');
 var pkg = require('./package.json');
 var browserSync = require('browser-sync').create();
+var replace = require('gulp-replace');
 
 // Set the banner content
 var banner = ['/*!\n',
@@ -77,6 +78,7 @@ gulp.task('css:compile', function() {
     .pipe(gulp.dest('./website/css'))
 });
 
+
 // Minify CSS
 gulp.task('css:minify', ['css:compile'], function() {
   return gulp.src([
@@ -132,3 +134,15 @@ gulp.task('dev', ['css', 'js', 'browserSync'], function() {
   gulp.watch('./website/js/*.js', ['js']);
   gulp.watch('./website/*.html', browserSync.reload);
 });
+
+gulp.task('deploy_prod', function(){
+  gulp.src(['website/index.html'])
+    .pipe(replace('localhost:3000', 'www.webdevcoop.com'))
+    .pipe(gulp.dest('website/'));
+});
+
+gulp.task('back_to_dev', function() {
+  gulp.src(['website/index.html'])
+    .pipe(replace('www.webdevcoop.com', 'localhost:3000'))
+    .pipe(gulp.dest('website/'));
+})

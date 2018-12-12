@@ -4,6 +4,7 @@
  * Licensed under MIT (https://github.com/BlackrockDigital/startbootstrap-creative/blob/master/LICENSE)
  */
 
+/* Media queries sizes */
 body,
 html {
   width: 100%;
@@ -248,11 +249,18 @@ header.masthead p {
   width: 100%;
   height: 100%;
   text-align: center;
-  opacity: 0;
+  opacity: 1;
   color: #fff;
-  background: rgba(240, 95, 64, 0.9);
+  background: rgba(240, 95, 64, 0.5);
   -webkit-transition: all 0.2s;
   transition: all 0.2s;
+}
+
+@media screen and (min-width: 576px) {
+  .portfolio-box .portfolio-box-caption {
+    opacity: 0;
+    background: rgba(240, 95, 64, 0.9);
+  }
 }
 
 .portfolio-box .portfolio-box-caption .portfolio-box-caption-content {
@@ -328,7 +336,6 @@ header.masthead p {
   box-shadow: 0 0 0 0.2rem rgba(240, 95, 64, 0.5) !important;
 }
 
-/* Media queries sizes */
 body,
 h2,
 a,
@@ -339,6 +346,25 @@ a,
 @font-face {
   font-family: "Moon Flower Bold";
   src: url(fonts/Moon_Flower_Bold.ttf) format("truetype");
+}
+
+.logo-principal {
+  opacity: 1;
+  margin-top: 9.5em;
+  margin-left: 1.5em;
+  width: 85%;
+}
+
+@media only screen and (min-width: 576px) {
+  .logo-principal {
+    opacity: 0.5;
+    margin: 0;
+  }
+}
+
+#header-fraterna .overlay {
+  top: 0;
+  left: 0;
 }
 
 nav#mainNav a {
@@ -355,8 +381,23 @@ nav#mainNav .la-fraterna-nav-title:hover {
   text-decoration: none;
 }
 
-.logo-principal {
-  opacity: 0.5;
+#cover-mobile {
+  display: block;
+  background-image: url("../img/la_fraterna_mobile.png");
+  background-attachment: scroll;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100%;
+  width: 100%;
+  position: absolute;
+}
+
+@media only screen and (min-width: 576px) {
+  #cover-mobile {
+    display: none;
+    background-attachment: fixed;
+  }
 }
 
 .overlay {
@@ -368,9 +409,23 @@ nav#mainNav .la-fraterna-nav-title:hover {
   z-index: 1;
 }
 
-#header-fraterna .overlay {
-  top: 0;
-  left: 0;
+#restaurante.parallax {
+  background-image: url("../img/portfolio/fullsize/risotto2.JPG");
+}
+
+.parallax {
+  min-height: 650px;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+@media only screen and (max-device-width: 1200px) {
+  .parallax {
+    background-attachment: scroll;
+    height: auto;
+  }
 }
 
 #contact.parallax {
@@ -470,31 +525,19 @@ nav#mainNav .la-fraterna-nav-title:hover {
   color: #331832;
 }
 
-#restaurante.parallax {
-  background-image: url("../img/portfolio/fullsize/risotto2.JPG");
-}
-
-.parallax {
-  min-height: 650px;
-  background-attachment: fixed;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-}
-
-@media only screen and (max-device-width: 1200px) {
-  .parallax {
-    background-attachment: scroll;
-    height: auto;
-  }
-}
-
 #div-consulta {
   top: 1em;
-  width: 35%;
   z-index: 1031;
   position: absolute;
-  margin: 0 35%;
+  margin: 0 15%;
+  width: 75%;
+}
+
+@media screen and (min-width: 576px) {
+  #div-consulta {
+    margin: 0 35%;
+    width: 35%;
+  }
 }
 
 .error {

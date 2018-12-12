@@ -8,7 +8,7 @@
   <meta name="description" content="La Fraterna es un espacio cooperativo donde se conjuga lo gastronómico con lo cultural y los talleres.">
   <meta name="author" content="La Fraterna">
   <!-- For IE 9 and below. ICO should be 32x32 pixels in size -->
-  <!--[if IE]><link rel="shortcut icon" href="path/to/favicon.ico"><![endif]-->
+  <!--[if IE]><link rel="shortcut icon" href="img/favicon_180.png"><![endif]-->
 
   <!-- Touch Icons - iOS and Android 2.1+ 180x180 pixels in size. --> 
   <link rel="apple-touch-icon-precomposed" href="img/favicon_180.png">
@@ -78,10 +78,11 @@
     </div>
   
   <header id="header-fraterna">
-    <div class="overlay"></div>
-    <video playsinline="playsinline" autoplay="autoplay" muted="muted" loop="loop">
+    <div class="overlay d-none d-md-inline-block"></div>
+    <video class="d-none d-md-inline-block" playsinline="playsinline" autoplay="autoplay" muted="muted" loop="loop">
       <source src="img/la_fraterna_website_compressed.mp4" type="video/mp4">
     </video>
+    <div id="cover-mobile" class="d-block d-md-none"></div>
     <div class="container h-100">
       <div class="d-flex text-center h-100">
         <div class="my-auto w-100 text-white">
@@ -115,6 +116,11 @@
 
   <section id="propuestas">
     <div class="container-fluid p-0">
+      <div class="row no-gutters">
+        <div class="col text-center mb-3">
+          <h2 class="section-heading">Propuestas</h2>
+        </div>
+      </div>
       <div class="row no-gutters">
         <div class="col-lg-4">
           <a class="portfolio-box js-scroll-trigger" href="#vivero">
@@ -264,7 +270,7 @@
               </div>
             </div>
 
-            <input type="hidden" name="_next" value="http://localhost:3002/?form=confirmed" />
+            <input type="hidden" name="_next" value="http://localhost:3000/?form=confirmed" />
             <input type="hidden" name="_subject" value="Consulta Web..." />
             <input type="hidden" name="_language" value="es" />
           </form>

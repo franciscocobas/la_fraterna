@@ -20,4 +20,10 @@ $color4: rgba(255, 255, 252, 1);
 $color4-transparent: rgba(255, 255, 252, 0.7);
 $color5: rgba(62, 92, 118, 1);
 
+/* Media queries sizes */ 
+$break-small: 576px;
+$break-medium: 720px;
+$break-large: 992px;
+$break-extra-large: 1200px;
+
 $primary: #F05F40 !default;

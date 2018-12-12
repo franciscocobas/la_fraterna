@@ -1,11 +1,5 @@
 
 
-/* Media queries sizes */ 
-$break-small: 576px;
-$break-medium: 720px;
-$break-large: 992px;
-$break-extra-large: 1200px;
-
 body,
 h2,
 a,
@@ -18,8 +12,27 @@ a,
   src: url(fonts/Moon_Flower_Bold.ttf) format("truetype");
 }
 
+.logo-principal {
+  opacity: 1;
+  margin-top: 9.5em;
+  margin-left: 1.5em;
+  width: 85%;
+
+  @media only screen and (min-width: $break-small) {
+    opacity: 0.5;
+    margin: 0;
+  }
+}
+
+#header-fraterna {
+  .overlay {
+    top: 0;
+    left: 0;
+  } 
+}
+
 nav#mainNav {
-  // #mainNav .navbar-nav>li.nav-item>a.nav-link
+
   a{
     font-family: "Moon Flower Bold", Verdana, Tahoma;
   }
@@ -34,9 +47,25 @@ nav#mainNav {
   }  
 }
 
-.logo-principal {
-  opacity: 0.5;
+#cover-mobile {
+
+  display: block;
+  background-image: url("../img/la_fraterna_mobile.png");
+  background-attachment: scroll;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100%;
+  width: 100%;
+  position: absolute;
+
+  @media only screen and (min-width: $break-small) {
+    display: none;
+    background-attachment: fixed;
+  }
+
 }
+
 
 .overlay {
   position: absolute;
@@ -47,11 +76,23 @@ nav#mainNav {
   z-index: 1;
 }
 
-#header-fraterna {
-  .overlay {
-    top: 0;
-    left: 0;
-  } 
+#restaurante.parallax {
+  background-image: url("../img/portfolio/fullsize/risotto2.JPG");
+}
+
+.parallax {
+  min-height: 650px; 
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+@media only screen and (max-device-width: 1200px) {
+  .parallax {
+      background-attachment: scroll;
+      height: auto;
+  }
 }
 
 #contact.parallax {
@@ -123,31 +164,17 @@ nav#mainNav {
   }
 }
 
-#restaurante.parallax {
-  background-image: url("../img/portfolio/fullsize/risotto2.JPG");
-}
-
-.parallax {
-  min-height: 650px; 
-  background-attachment: fixed;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-}
-
-@media only screen and (max-device-width: 1200px) {
-  .parallax {
-      background-attachment: scroll;
-      height: auto;
-  }
-}
-
 #div-consulta {
   top: 1em;
-  width: 35%;
   z-index: 1031;
   position: absolute;
-  margin: 0 35%;
+  margin: 0 15%;
+  width: 75%;
+
+  @media screen and (min-width: $break-small) {
+    margin: 0 35%;
+    width: 35%;
+  }
 }
 .error {
     color: $color1;
