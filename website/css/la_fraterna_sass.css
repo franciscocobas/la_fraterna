@@ -40,6 +40,14 @@ a,
   left: 0;
 }
 
+#restaurante h2 {
+  color: #cbe896 !important;
+}
+
+#restaurante .icon-gastronomia-container i {
+  color: #cbe896 !important;
+}
+
 #contact.parallax {
   background-image: url("../img/flor_burucuya.jpg");
 }
@@ -73,10 +81,6 @@ a,
   border: 1px solid #331832;
   border-radius: 5px;
   min-height: 10em;
-}
-
-#contact .colorIcon {
-  color: #cbe896 !important;
 }
 
 #contact label {
