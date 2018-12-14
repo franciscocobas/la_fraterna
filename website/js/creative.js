@@ -40,21 +40,22 @@
   $(window).scroll(navbarCollapse);
 
   // Scroll reveal calls
-  window.sr = ScrollReveal({ distance: '60px'});
+  window.sr = ScrollReveal({ distance: '60px', duration: 600  });
 
   sr.reveal('.sr-icon-1', {
     delay: 600,
     origin: 'top',
     reset: true
+
   });
   sr.reveal('.sr-icon-2', {
     delay: 400,
     scale: 0
   });
   sr.reveal('.sr-icon-3', {
-    delay: 500,
-    scale: 0,
-    origin: 'bottom',
+    delay: 400,
+    origin: 'right',
+    reset: true,
   });
   sr.reveal('.sr-icon-4', {
     delay: 800,

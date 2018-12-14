@@ -1,0 +1,71 @@
+[33mcommit 846137ffb1d92a11017695c7467f5b43abef823b[m[33m ([m[1;36mHEAD -> [m[1;32mmaster[m[33m, [m[1;31morigin/master[m[33m)[m
+Author: unknown <anthony.pereira@anima.edu.uy>
+Date:   Fri Dec 14 17:55:32 2018 -0300
+
+    change the brakpoint of section vivero
+
+[33mcommit 76bcfa09d20988b9c9af2ed908c1b8ac289c2e20[m
+Author: unknown <anthony.pereira@anima.edu.uy>
+Date:   Fri Dec 14 17:31:15 2018 -0300
+
+    Finish the section vivero
+
+[33mcommit 3877138ff66740a6a37f129c06fe06b8e678e582[m
+Author: unknown <anthony.pereira@anima.edu.uy>
+Date:   Wed Dec 12 19:03:49 2018 -0300
+
+    Starting the nursery garden
+
+[33mcommit 43f42e60fcf95c8512007f35aab03709c77c1f36[m
+Author: unknown <anthony.pereira@anima.edu.uy>
+Date:   Wed Dec 12 18:10:01 2018 -0300
+
+    Change the scrollreveal of the icons in section restaurant
+
+[33mcommit d9a89d5aa324db0be7db7126afb82ca191df1b6b[m
+Author: unknown <anthony.pereira@anima.edu.uy>
+Date:   Mon Dec 10 18:51:19 2018 -0300
+
+    chage the icons in the section restaurant and change the margins of the text
+
+[33mcommit 059d9b2ad0895973397899aa87c0511d606e3238[m
+Author: unknown <anthony.pereira@anima.edu.uy>
+Date:   Fri Dec 7 19:01:56 2018 -0300
+
+    changes in secction resto
+
+[33mcommit 7f52cde074b9a023ec5c5956453b0916ae07e6c8[m
+Author: Francisco Cobas <fcarocena@gmail.com>
+Date:   Fri Dec 7 17:10:40 2018 -0300
+
+    Big changes
+
+[33mcommit 1b630dc8cd1e87eb23366653448b160d07cfde67[m
+Author: Francisco Cobas <fcarocena@gmail.com>
+Date:   Fri Dec 7 10:52:39 2018 -0300
+
+    Modified GULP related things
+
+[33mcommit a4966b5b954b42f64db48139a41aa30cc588b7a0[m
+Author: Francisco Cobas <fcarocena@gmail.com>
+Date:   Wed Dec 5 15:34:23 2018 -0300
+
+    Form now is almost done
+
+[33mcommit 8da3d7d21f7c2600d5717eb08550fcb859930acb[m
+Author: Francisco Cobas <fcarocena@gmail.com>
+Date:   Sat Dec 1 23:51:07 2018 -0300
+
+    Agrego seccion de contacto
+
+[33mcommit c7532c616558336f9c1170b4cb012d52a2e72a12[m
+Author: Francisco Cobas <fcarocena@gmail.com>
+Date:   Fri Nov 30 17:26:33 2018 -0300
+
+    Added gitignore file
+
+[33mcommit 94242998ba73a25bda876c7f7751633dcef72637[m
+Author: Francisco Cobas <fcarocena@gmail.com>
+Date:   Fri Nov 30 17:24:03 2018 -0300
+
+    Added base site
