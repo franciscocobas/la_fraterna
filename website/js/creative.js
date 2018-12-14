@@ -54,7 +54,7 @@
   sr.reveal('.sr-icon-3', {
     delay: 500,
     scale: 0,
-    reset: true
+    origin: 'bottom',
   });
   sr.reveal('.sr-icon-4', {
     delay: 800,
