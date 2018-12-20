@@ -1,0 +1,207 @@
+
+
+body,
+h2,
+a,
+.btn {
+    font-family: 'Raleway', sans-serif;
+}
+
+@font-face {
+  font-family: "Moon Flower Bold";
+  src: url(fonts/Moon_Flower_Bold.ttf) format("truetype");
+}
+
+.logo-principal {
+  opacity: 1;
+  margin-top: 9.5em;
+  margin-left: 1.5em;
+  width: 85%;
+
+  @media only screen and (min-width: $break-small) {
+    opacity: 0.5;
+    margin: 0;
+  }
+}
+
+#header-fraterna {
+  .overlay {
+    top: 0;
+    left: 0;
+  } 
+}
+
+nav#mainNav {
+
+  a{
+    font-family: "Moon Flower Bold", Verdana, Tahoma;
+  }
+
+  .la-fraterna-nav-title { 
+    cursor: pointer;
+    font-size: 2em;
+    font-weight: 600; 
+    margin: 0 auto;
+  }
+  .la-fraterna-nav-title:hover {
+    text-decoration: none;
+  }  
+}
+
+#cover-mobile {
+
+  display: block;
+  background-image: url("../img/la_fraterna_mobile.png");
+  background-attachment: scroll;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100%;
+  width: 100%;
+  position: absolute;
+
+  @media only screen and (min-width: $break-small) {
+    display: none;
+    background-attachment: fixed;
+  }
+
+}
+.overlay {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  background-color: black;
+  opacity: 0.5;
+  z-index: 1;
+}
+
+#gastronomia{
+
+  color: $color4;
+
+  &.parallax {
+    background-image: url("../img/portfolio/fullsize/risotto2.JPG");
+  }
+
+  .overlay-resto {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(51, 24, 50, 0.5);
+    color: rgba(255, 255, 252, 0.7);
+    margin-top: -8em;
+  }
+  h2 {
+    color: $color3;
+  }
+  .icon-gastronomia-container {
+    i {
+      color: $color3;
+    }
+  }
+}
+
+.parallax {
+  min-height: 650px; 
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+@media only screen and (max-device-width: 1200px) {
+  .parallax {
+      background-attachment: scroll;
+      height: auto;
+  }
+}
+
+#contact.parallax {
+  background-image: url("../img/flor_burucuya.jpg");
+}
+
+
+#contact {
+
+  color: $color1;
+
+  h2 {
+    font-weight: 700;
+  }
+  .overlay {
+    margin-top: -8em;
+    z-index: 0;
+  }
+  .form-container {
+    background-color: $color4-transparent;
+  }
+
+  input,
+  textarea {
+    border: none;
+    background-color: transparent;
+    border-bottom: 2px solid $color1;
+    padding-bottom: 5px;
+  }
+  textarea {
+    border: 1px solid $color1;
+    border-radius: 5px;
+    min-height: 10em;
+  }
+  label {
+    width: 75%;
+    color: $color2;
+  }
+  input:focus,
+  textarea:focus {
+    outline: none;
+    -webkit-box-shadow: none;
+    -moz-box-shadow: none;
+    box-shadow: none;
+    background-color: $color4-transparent;
+    border-radius: 5px;
+  }
+  
+  input:focus {
+    border-bottom: 2px solid transparent;
+  }
+  
+  input:focus::-webkit-input-placeholder,
+  textarea:focus::-webkit-input-placeholder{ /* WebKit browsers */
+    color: transparent;
+  }
+  
+  ::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+    color: $color1-transparent;
+    opacity: 1; /* Firefox */
+  }
+  
+  :-ms-input-placeholder { /* Internet Explorer 10-11 */
+    color: $color1;
+  }
+  
+  ::-ms-input-placeholder { /* Microsoft Edge */
+    color: $color1;
+  }
+}
+
+#div-consulta {
+  top: 1em;
+  z-index: 1031;
+  position: absolute;
+  margin: 0 15%;
+  width: 75%;
+
+  @media screen and (min-width: $break-small) {
+    margin: 0 35%;
+    width: 35%;
+  }
+}
+.error {
+    color: $color1;
+}
+footer {
+  font-family: 'Raleway', sans-serif;
+  background-color: $color5;
+  color: $color2;
+}

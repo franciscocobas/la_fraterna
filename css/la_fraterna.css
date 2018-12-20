@@ -1,0 +1,54 @@
+
+
+header {
+    position: relative;
+    background-color: black;
+    height: 75vh;
+    min-height: 100%;
+    width: 100%;
+    overflow: hidden;
+}
+
+header video {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    object-fit: fill;
+    z-index: 0;
+    -ms-transform: translateX(-50%) translateY(-50%);
+    -moz-transform: translateX(-50%) translateY(-50%);
+    -webkit-transform: translateX(-50%) translateY(-50%);
+    transform: translateX(-50%) translateY(-50%);
+}
+
+header .container {
+    position: relative;
+    z-index: 2;
+}
+
+@media (pointer: coarse) and (hover: none) {
+    header {
+        background: url('../img/la_fraterna_website_compressed.mp4') black no-repeat center center scroll;
+    }
+}
+
+.la-fraterna-logo-nav {
+    width: 100px;
+}
+
+/* col-lg (Large) */
+@media (min-width: 992px) {
+}
+
+#btn-enviar {
+    width: 5em;
+    background-color: #a5402d;
+    box-shadow: 2px 2px 2px #a5402d;
+    color: #f3c98b;
+    border-radius: 4px;
+    cursor: pointer;
+}
